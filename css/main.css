@@ -1,0 +1,971 @@
+/* Anderson Wholesale Auto Style Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+
+p { margin-bottom: 15px; }
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #b71c1c;
+}
+
+.btn-secondary {
+    background-color: #1976d2;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #1565c0;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.btn-outline:hover {
+    background-color: #333;
+    color: white;
+}
+
+.btn-view {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+.btn-view:hover {
+    background-color: #388e3c;
+}
+
+.btn-search {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-search:hover {
+    background-color: #f57c00;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #1976d2;
+    color: white;
+    padding: 8px 0;
+    font-size: 12px;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 20px;
+}
+
+.phone {
+    font-weight: 600;
+}
+
+.top-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.top-links a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+.header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section .logo {
+    color: #d32f2f;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.tagline {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+    font-style: italic;
+}
+
+.main-nav .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 0;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #d32f2f;
+    border-bottom-color: #d32f2f;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.welcome-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.welcome-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Search Section */
+.search-section {
+    background-color: white;
+    padding: 40px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.search-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.search-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.search-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    gap: 20px;
+    align-items: end;
+}
+
+.search-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.search-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+}
+
+/* Featured Vehicles */
+.featured-vehicles {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.vehicles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.vehicle-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.vehicle-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.vehicle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #d32f2f;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.vehicle-info {
+    padding: 20px;
+}
+
+.vehicle-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.vehicle-details {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.vehicle-details span {
+    background-color: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+.vehicle-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.view-all {
+    text-align: center;
+}
+
+/* Why Choose Us */
+.why-choose {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.benefit-item {
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.benefit-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.benefit-item h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.benefit-item p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* About Section */
+.about-section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.about-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat strong {
+    display: block;
+    font-size: 24px;
+    color: #d32f2f;
+    font-weight: 700;
+}
+
+.stat span {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* Contact CTA */
+.contact-cta {
+    background-color: #1976d2;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-cta h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contact-cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-cta .btn-primary {
+    background-color: #d32f2f;
+}
+
+.contact-cta .btn-secondary {
+    background-color: #ff9800;
+}
+
+.contact-cta .btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.contact-cta .btn-outline:hover {
+    background-color: white;
+    color: #1976d2;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: #d32f2f;
+    margin-bottom: 15px;
+}
+
+.footer-text,
+.footer-address p,
+.footer-contact p {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    color: #ccc;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-bottom-links a:hover {
+    color: white;
+}
+
+/* Page Header */
+.page-header {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+}
+
+/* Financing Page Styles */
+.financing-info {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.financing-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.financing-text h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.financing-text p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.financing-benefits h3,
+.credit-types h3 {
+    color: #d32f2f;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.financing-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.financing-benefits li {
+    color: #666;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+.credit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.credit-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #d32f2f;
+}
+
+.credit-item strong {
+    display: block;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.credit-item p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Application Form */
+.form-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-card > p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+}
+
+.form-section h4 {
+    color: #d32f2f;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row.three-col {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #d32f2f;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.3);
+}
+
+.form-disclaimer {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.form-disclaimer p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.btn-large {
+    padding: 15px 30px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Calculator Section */
+.calculator-section {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.calculator-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.calc-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: end;
+}
+
+.calc-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.calc-group label {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.calc-group input,
+.calc-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.calc-group .btn {
+    margin-top: 20px;
+}
+
+.result-display {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #d32f2f;
+}
+
+.result-display h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.payment-amount {
+    font-size: 48px;
+    font-weight: 700;
+    color: #d32f2f;
+    margin-bottom: 15px;
+}
+
+.result-display p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Location Section */
+.location-section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.location-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.location-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.location-info h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.address,
+.hours {
+    margin-bottom: 25px;
+}
+
+.address p,
+.hours p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.hours h4 {
+    color: #d32f2f;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-bar-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .search-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-button {
+        justify-self: center;
+    }
+    
+    .welcome-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .vehicles-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-stats {
+        justify-content: center;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .financing-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .credit-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row.three-col {
+        grid-template-columns: 1fr;
+    }
+    
+    .calculator {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .calc-inputs {
+        grid-template-columns: 1fr;
+    }
+    
+    .payment-amount {
+        font-size: 36px;
+    }
+    
+    .location-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

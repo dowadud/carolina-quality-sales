@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Carolina Quality Sales</title>
+    <meta name="description" content="Contact Carolina Quality Sales for all your automotive wholesale needs. Phone, email, and location information.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <h1 class="logo">Carolina Quality Sales</h1>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inventory.html" class="nav-link">Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dealers.html" class="nav-link">Dealer Login</a>
+                </li>
+            </ul>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">Get in touch with our team for all your wholesale automotive needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2 class="form-title">Send us a Message</h2>
+                    <p class="form-subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" class="form-label">Dealership Name</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiryType" class="form-label">Type of Inquiry *</label>
+                            <select id="inquiryType" name="inquiryType" class="form-select" required>
+                                <option value="">Select inquiry type</option>
+                                <option value="inventory">Inventory Inquiry</option>
+                                <option value="partnership">Become a Partner</option>
+                                <option value="financing">Financing Options</option>
+                                <option value="transportation">Transportation Services</option>
+                                <option value="general">General Information</option>
+                                <option value="support">Customer Support</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tell us about your needs or questions..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="checkbox-input">
+                                <span class="checkmark"></span>
+                                Yes, I would like to receive updates about new inventory and services
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2 class="info-title">Get in Touch</h2>
+                    
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <span>📞</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Phone</h4>
+                                <p class="contact-value">(555) 123-4567</p>
+                                <p class="contact-note">Monday - Friday: 8AM - 6PM<br>Saturday: 9AM - 4PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <span>✉️</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Email</h4>
+                                <p class="contact-value">info@carolinaqualitysales.com</p>
+                                <p class="contact-note">We respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <span>📍</span>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Address</h4>
+                                <p class="contact-value">123 Business Park Drive<br>Charlotte, NC 28269</p>
+                                <p class="contact-note">By appointment only</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Actions -->
+                    <div class="quick-actions">
+                        <h3 class="quick-title">Quick Actions</h3>
+                        <div class="action-buttons">
+                            <a href="inventory.html" class="action-btn">
+                                <span class="action-icon">🚗</span>
+                                <span class="action-text">Browse Inventory</span>
+                            </a>
+                            <a href="services.html" class="action-btn">
+                                <span class="action-icon">⚙️</span>
+                                <span class="action-text">Our Services</span>
+                            </a>
+                            <a href="dealers.html" class="action-btn">
+                                <span class="action-icon">👥</span>
+                                <span class="action-text">Dealer Portal</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <h2 class="section-title">Visit Our Showroom</h2>
+            <div class="location-content">
+                <div class="location-image">
+                    <img src="https://images.unsplash.com/photo-1562141961-4a1a12df3e1e?w=600&h=400&fit=crop&auto=format" alt="Carolina Quality Sales Showroom">
+                </div>
+                <div class="location-info">
+                    <h3>Carolina Quality Sales</h3>
+                    <div class="address">
+                        <p>123 Auto Sales Drive<br>Charlotte, NC 28269</p>
+                        <p><strong>Phone:</strong> (704) 555-0123</p>
+                        <p><strong>Email:</strong> sales@carolinaqualitysales.com</p>
+                    </div>
+                    <div class="hours">
+                        <h4>Business Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                        Saturday: 9:00 AM - 5:00 PM<br>
+                        Sunday: Closed</p>
+                    </div>
+                    <a href="https://maps.google.com/?q=123+Auto+Sales+Drive+Charlotte+NC+28269" class="btn btn-primary" target="_blank" rel="noopener">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about our services and processes</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4 class="faq-question">What are your business hours?</h4>
+                    <p class="faq-answer">We're open Monday through Friday from 8AM to 6PM, and Saturday from 9AM to 4PM. We're closed on Sundays and major holidays.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">How quickly can you respond to inventory requests?</h4>
+                    <p class="faq-answer">We typically respond to inventory inquiries within 2-4 hours during business hours. For urgent requests, please call us directly.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">Do you offer financing options?</h4>
+                    <p class="faq-answer">Yes, we work with several financing partners to help dealers with their wholesale purchases. Contact us to learn more about available options.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">What areas do you serve?</h4>
+                    <p class="faq-answer">We primarily serve dealers throughout North and South Carolina, but we can arrange transportation to other southeastern states.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">How do you ensure vehicle quality?</h4>
+                    <p class="faq-answer">Every vehicle undergoes a comprehensive inspection process and comes with a detailed condition report. We only stock vehicles that meet our high-quality standards.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">Can I visit your facility?</h4>
+                    <p class="faq-answer">Yes, we welcome dealer visits by appointment. Please call ahead to schedule a time to view our inventory and facility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Carolina Quality Sales</h3>
+                    <p class="footer-text">Your trusted partner for premium automotive wholesale solutions across the Carolinas.</p>
+                    <div class="footer-contact">
+                        <p>📞 (555) 123-4567</p>
+                        <p>✉️ info@carolinaqualitysales.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Wholesale Purchasing</a></li>
+                        <li><a href="services.html">Vehicle Inspection</a></li>
+                        <li><a href="services.html">Financing Options</a></li>
+                        <li><a href="services.html">Transportation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Info</h4>
+                    <div class="footer-address">
+                        <p>123 Business Park Drive</p>
+                        <p>Charlotte, NC 28269</p>
+                        <p>Monday - Friday: 8AM - 6PM</p>
+                        <p>Saturday: 9AM - 4PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Carolina Quality Sales. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer Portal - Carolina Quality Sales</title>
+    <meta name="description" content="Access the Carolina Quality Sales dealer portal for exclusive inventory, pricing, and account management.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <h1 class="logo">Carolina Quality Sales</h1>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inventory.html" class="nav-link">Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dealers.html" class="nav-link active">Dealer Login</a>
+                </li>
+            </ul>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Dealer Portal</h1>
+            <p class="page-subtitle">Access exclusive inventory, pricing, and account management tools</p>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="login-content">
+                <div class="login-form-section">
+                    <div class="login-card">
+                        <h2 class="login-title">Dealer Login</h2>
+                        <p class="login-subtitle">Access your dealer account to view exclusive inventory and pricing</p>
+                        
+                        <form id="dealer-login-form" class="login-form">
+                            <div class="form-group">
+                                <label for="dealerEmail" class="form-label">Email Address</label>
+                                <input type="email" id="dealerEmail" name="dealerEmail" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" id="password" name="password" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="rememberMe" name="rememberMe" class="checkbox-input">
+                                    <span class="checkmark"></span>
+                                    Remember me
+                                </label>
+                                <a href="#" class="forgot-link">Forgot password?</a>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary login-btn">Login to Portal</button>
+                        </form>
+                        
+                        <div class="login-footer">
+                            <p>Don't have a dealer account? <a href="#apply" class="signup-link">Apply for Partnership</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portal-benefits">
+                    <h3 class="benefits-title">Dealer Portal Benefits</h3>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💰</div>
+                        <div class="benefit-content">
+                            <h4>Exclusive Pricing</h4>
+                            <p>Access dealer-only pricing with additional volume discounts</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🚗</div>
+                        <div class="benefit-content">
+                            <h4>Early Access</h4>
+                            <p>Get first look at new inventory before public release</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📊</div>
+                        <div class="benefit-content">
+                            <h4>Account Dashboard</h4>
+                            <p>Track purchases, financing, and payment history</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🔔</div>
+                        <div class="benefit-content">
+                            <h4>Custom Alerts</h4>
+                            <p>Receive notifications for vehicles matching your criteria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Section -->
+    <section id="apply" class="application-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Become a Dealer Partner</h2>
+                <p class="section-subtitle">Join our network of trusted dealer partners across the Carolinas</p>
+            </div>
+            
+            <div class="application-content">
+                <div class="application-form">
+                    <h3 class="form-title">Dealer Application</h3>
+                    
+                    <form id="dealer-application-form" class="dealer-form">
+                        <div class="form-section">
+                            <h4 class="section-heading">Business Information</h4>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="businessName" class="form-label">Business Name *</label>
+                                    <input type="text" id="businessName" name="businessName" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dealerLicense" class="form-label">Dealer License # *</label>
+                                    <input type="text" id="dealerLicense" name="dealerLicense" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="businessAddress" class="form-label">Business Address *</label>
+                                    <input type="text" id="businessAddress" name="businessAddress" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="yearsInBusiness" class="form-label">Years in Business *</label>
+                                    <select id="yearsInBusiness" name="yearsInBusiness" class="form-select" required>
+                                        <option value="">Select years</option>
+                                        <option value="0-1">0-1 years</option>
+                                        <option value="2-5">2-5 years</option>
+                                        <option value="6-10">6-10 years</option>
+                                        <option value="11-20">11-20 years</option>
+                                        <option value="20+">20+ years</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h4 class="section-heading">Contact Information</h4>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactName" class="form-label">Primary Contact Name *</label>
+                                    <input type="text" id="contactName" name="contactName" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactTitle" class="form-label">Title *</label>
+                                    <input type="text" id="contactTitle" name="contactTitle" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactEmail" class="form-label">Email Address *</label>
+                                    <input type="email" id="contactEmail" name="contactEmail" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactPhone" class="form-label">Phone Number *</label>
+                                    <input type="tel" id="contactPhone" name="contactPhone" class="form-input" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h4 class="section-heading">Business Details</h4>
+                            
+                            <div class="form-group">
+                                <label for="monthlyVolume" class="form-label">Expected Monthly Volume *</label>
+                                <select id="monthlyVolume" name="monthlyVolume" class="form-select" required>
+                                    <option value="">Select volume</option>
+                                    <option value="1-5">1-5 vehicles</option>
+                                    <option value="6-15">6-15 vehicles</option>
+                                    <option value="16-30">16-30 vehicles</option>
+                                    <option value="31-50">31-50 vehicles</option>
+                                    <option value="50+">50+ vehicles</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="vehicleTypes" class="form-label">Vehicle Types of Interest</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="vehicleTypes" value="sedans" class="checkbox-input">
+                                        <span class="checkmark"></span>
+                                        Sedans
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="vehicleTypes" value="suvs" class="checkbox-input">
+                                        <span class="checkmark"></span>
+                                        SUVs
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="vehicleTypes" value="trucks" class="checkbox-input">
+                                        <span class="checkmark"></span>
+                                        Trucks
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="vehicleTypes" value="luxury" class="checkbox-input">
+                                        <span class="checkmark"></span>
+                                        Luxury
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="additionalInfo" class="form-label">Additional Information</label>
+                                <textarea id="additionalInfo" name="additionalInfo" class="form-textarea" rows="4" placeholder="Tell us about your dealership and specific needs..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary application-submit">Submit Application</button>
+                    </form>
+                </div>
+                
+                <div class="application-info">
+                    <h3 class="info-title">Application Process</h3>
+                    
+                    <div class="process-steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Submit Application</h4>
+                                <p>Complete the dealer application form with your business information</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Review Process</h4>
+                                <p>Our team reviews your application and verifies your dealer credentials</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Account Setup</h4>
+                                <p>Once approved, we'll set up your dealer portal account and provide access</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Start Purchasing</h4>
+                                <p>Begin accessing exclusive inventory and dealer pricing</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h4>Questions?</h4>
+                        <p>Contact our dealer relations team:</p>
+                        <p>📞 (555) 123-4567</p>
+                        <p>✉️ dealers@carolinaqualitysales.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Carolina Quality Sales</h3>
+                    <p class="footer-text">Your trusted partner for premium automotive wholesale solutions across the Carolinas.</p>
+                    <div class="footer-contact">
+                        <p>📞 (555) 123-4567</p>
+                        <p>✉️ info@carolinaqualitysales.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Wholesale Purchasing</a></li>
+                        <li><a href="services.html">Vehicle Inspection</a></li>
+                        <li><a href="services.html">Financing Options</a></li>
+                        <li><a href="services.html">Transportation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Info</h4>
+                    <div class="footer-address">
+                        <p>123 Business Park Drive</p>
+                        <p>Charlotte, NC 28269</p>
+                        <p>Monday - Friday: 8AM - 6PM</p>
+                        <p>Saturday: 9AM - 4PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Carolina Quality Sales. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
